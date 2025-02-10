@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: redis_app_db
+    restart: always
+    environment:
+      POSTGRES_USER: beko
+      POSTGRES_PASSWORD: beko
+      POSTGRES_DB: demo_redis_app
+    ports:
+      - "5433:5432"

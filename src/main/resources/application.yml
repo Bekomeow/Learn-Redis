@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: redis-demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/demo_redis_app
+    username: beko
+    password: beko
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
